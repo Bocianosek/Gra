@@ -22,23 +22,23 @@ public class StresManager : MonoBehaviour
     {
         timer += Time.deltaTime;
 
-        // Sprawdzenie, czy minê³o 30 sekund
+        
         if (timer >= updateInterval)
         {
             timer = 0f;
             IncrementStressValue();
         }
 
-        // Sprawdzenie, czy wartoœæ "Stres" osi¹gnê³a 100
+       
         if (stressValue >= 100 && !isBlurred)
         {
             isBlurred = true;
             BlurScreen();
         }
-        if (stressValue < 100 && !isBlurred)
+        if (stressValue < 100 && isBlurred)
         {
             isBlurred = false;
-            
+            UnblurScreen();
         }
     }
 
@@ -55,7 +55,22 @@ public class StresManager : MonoBehaviour
 
     private void BlurScreen()
     {
-        // Aktywuj efekt blurowania ekranu
+        
         blurPanel.SetActive(true);
+    }
+
+    private void UnblurScreen()
+    {
+        
+        blurPanel.SetActive(false);
+    }
+
+    public void ReduceStressValue(int amount)
+    {
+        stressValue -= amount;
+        if (stressValue < 0)
+            stressValue = 0;
+
+        UpdateStressText();
     }
 }

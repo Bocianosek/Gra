@@ -13,7 +13,7 @@ public class Wypłata : MonoBehaviour
 
     private void Start()
     {
-        // Inicjalizacja początkowej wartości
+        
         currentValue = PlayerPrefs.GetFloat("StanKonta", 1000f);
         UpdateTextMeshValue();
     }
@@ -22,7 +22,7 @@ public class Wypłata : MonoBehaviour
     {
         timer += Time.deltaTime;
 
-        // Sprawdzenie, czy minęła jedna minuta
+        
         if (timer >= updateInterval)
         {
             timer = 0f;
@@ -33,11 +33,10 @@ public class Wypłata : MonoBehaviour
 
     private void UpdateTextMeshValue()
     {
-        // Aktualizacja wartości w komponencie TextMeshPro
-        textMesh.text = "Stan Konta: " + currentValue.ToString();
+        
+        textMesh.text = "Stan Konta: " + currentValue.ToString("F1");
 
-        // Zapisanie wartości stanu konta w PlayerPrefs
+        
         PlayerPrefs.SetFloat("StanKonta", currentValue);
     }
-
 }
