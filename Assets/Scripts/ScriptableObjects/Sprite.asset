@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8ba9658e7722b004489e1dde9b53fc25, type: 3}
+  m_Name: Sprite
+  m_EditorClassIdentifier: 
+  name: Sprite 1L
+  artwork: {fileID: 10911, guid: 0000000000000000f000000000000000, type: 0}
+  price: 7
+  model: {fileID: 85894615498769453, guid: 9a3ac777679478346a5208f0f34827a1, type: 3}

@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8ba9658e7722b004489e1dde9b53fc25, type: 3}
+  m_Name: Cola
+  m_EditorClassIdentifier: 
+  name: Cola 1L
+  artwork: {fileID: 21300000, guid: 3f2f531e1005eb242ade3df2abf13e64, type: 3}
+  price: 5
+  model: {fileID: 1740567832186594703, guid: a138a71c7a4fc8f46a8ab8be491872c7, type: 3}
