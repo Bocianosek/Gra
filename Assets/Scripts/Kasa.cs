@@ -70,7 +70,7 @@ public class Kasa : MonoBehaviour
         if (isInteracting)
         {
             float timeRemaining = nextInteractionTime - Time.time;
-            string timeText = string.Format("<color=white>Czas do kolejnego kasowania:</color> <color=red>{0:0} s</color>", timeRemaining);
+            string timeText = string.Format("<color=white>Czas do kolejnego kasowania:</color> <color=red>{0:0} </color>s", timeRemaining);
 
             if (timeRemaining <= 0f)
             {
